@@ -1,0 +1,103 @@
+/* Genral Rules */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+p,
+button {
+  font-family: 'Space Mono', monospace;
+}
+/* Genral Rules */
+
+/* Main styles */
+header .logo {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 150px;
+}
+main .parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+main .parent > img {
+  width: 40%;
+}
+main .parent .info > h1 {
+  font-size: 64px;
+  color: #333333;
+  width: 600px;
+}
+main .parent .info > p {
+  font-size: 24px;
+  color: #4f4f4f;
+  width: 400px;
+  margin-bottom: 50px;
+}
+main .parent .info > button {
+  border: none;
+  outline: none;
+  background-color: #333333;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+main .parent .info > button:hover {
+  background-color: #fff;
+  color: #333333;
+  border-color: #333333;
+}
+/* Footer */
+footer {
+  text-align: center;
+  color: #444;
+  margin-top: 115px;
+  margin-bottom: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  header .logo {
+    margin-bottom: 75px;
+  }
+  main .parent {
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+  }
+  main .parent > img {
+    width: 80%;
+  }
+  main .parent .info > h1 {
+    font-size: 48px;
+    width: 350px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+  }
+  main .parent .info > p {
+    font-size: 18px;
+    color: #4f4f4f;
+    width: 350px;
+    margin-bottom: 50px;
+  }
+  main .parent .info > button:hover {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+}
